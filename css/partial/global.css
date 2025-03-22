@@ -1,0 +1,79 @@
+/* global classes */
+
+.title-text{
+    font:normal bold 30px/50px var(--roboto);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.button{
+    padding: .7rem;
+    padding-inline: 1rem;
+    border:2px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    font:normal 500 15px/16px var(--roboto) ;
+
+}
+.button.primary-button{
+ background:var( --gradient-color);
+ background-clip: padding-box;
+ color: whitesmoke;
+ transition:background 0.5s ease ;
+ box-shadow: var(--shadow-color);
+}
+
+.button.primary-button:hover{
+    background:whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after,.button.secondary-button::after{
+   position: absolute;
+   top:-2px;left:-2px;
+   right:-2px;bottom:-2px;
+   background:var(--gradient-color);
+   content:"";
+   border-radius: 4px;
+   z-index: -1;
+}
+.button.secondary-button{
+background: whitesmoke;
+background-clip: padding-box;
+transition:background .5s ease;
+}
+.button.secondary-button:hover{
+    background:var(--gradient-color);
+    background-clip:padding-box;
+    color: whitesmoke;
+    
+}
+
+/* start about area */
+p.para{
+    color: var(--text-color);
+    font:normal 500 16px/25px var(--roboto);
+}
+/* end about area */
+/* brand-area */
+.font-roboto{
+ font-family:var(--roboto);
+}
+
+.tile-h1{
+    font: normal bold 39px/40px var(--roboto);
+}
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;right: 0;
+    z-index: 999;
+    background:#ffffff;
+    box-shadow: var(--box-shadow);
+    transition: background 1s ease;
+}
